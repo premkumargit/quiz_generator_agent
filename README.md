@@ -266,10 +266,9 @@ LOG_LEVEL=INFO uv run python -m quiz_generator_agent.ui
 </p>
 
 <p align="center">
-  <video src="images/quiz_video.mp4" controls width="70%">
-    Your browser does not support the video tag.  
-    You can also <a href="images/quiz_video.mp4">download the demo video</a>.
-  </video>
+  <a href="images/quiz_video.mp4">
+    <img src="images/UI Result.png" alt="Watch the quiz video demo" width="60%" />
+  </a>
 </p>
 
 ```
