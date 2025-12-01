@@ -1,4 +1,4 @@
-
+C830-C951
 # 🎓 Agentic Quiz Generator
 
 ## 🚀 Problem & Solution Pitch
@@ -146,7 +146,7 @@ quiz_agent = Agent(
 
 ## 🏗️ Agent Architecture
 
-See docs/architecture.md for technical implementation details.
+See the detailed architecture diagram in [`docs/architecture.md`](docs/architecture.md) for technical implementation details.
 
 **Educational Workflow:**
 ```mermaid
@@ -163,11 +163,14 @@ flowchart TD
     V -->|educational quiz video| C[👨‍🎓 Students]
     C -->|enhanced learning outcomes| R[📊 Results]
 
-    style AI fill:#e1f5fe
-    style Q fill:#f3e5f5
-    style S fill:#e8f5e8
-    style A fill:#fff3e0
-    style V fill:#fce4ec
+    %% High-contrast, accessible colors
+    style AI fill:#1976d2,stroke:#0d47a1,stroke-width:2px,color:#ffffff
+    style Q  fill:#8e24aa,stroke:#4a148c,stroke-width:2px,color:#ffffff
+    style S  fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff
+    style A  fill:#f9a825,stroke:#f57f17,stroke-width:2px,color:#000000
+    style V  fill:#c62828,stroke:#b71c1c,stroke-width:2px,color:#ffffff
+    style T  fill:#455a64,stroke:#263238,stroke-width:2px,color:#ffffff
+    style C  fill:#546e7a,stroke:#263238,stroke-width:2px,color:#ffffff
 ```
 
 ---
@@ -257,6 +260,19 @@ LOG_LEVEL=INFO uv run python -m quiz_generator_agent.ui
 ```
 
 **Sample Output:**
+
+<p align="center">
+  <img src="images/UI interface.png" alt="Quiz flow diagram" width="45%" />
+  <img src="images/UI Result.png" alt="Gradio UI screenshot" width="37%" />
+</p>
+
+<p align="center">
+  <video src="images/quiz_video.mp4" controls width="70%">
+    Your browser does not support the video tag.  
+    You can also <a href="docs/demo/demo.mp4">download the demo video</a>.
+  </video>
+</p>
+
 ```
 [INFO] quiz_generator_agent.quiz_agent - Entering design_quiz for topic: Fractions
 [INFO] quiz_generator_agent.storyboard_agent - Entering build_storyboard with 3 questions
