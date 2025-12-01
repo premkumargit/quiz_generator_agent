@@ -1,0 +1,27 @@
+
+[project]
+name = "quiz-generator-agent"
+version = "0.1.0"
+description = "Agentic quiz generator using Google ADK, Gemini 2.5 Flash Lite, Gemini TTS, MoviePy, and Gradio."
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk",
+    "google-genai",
+    "python-dotenv",
+    "moviepy",
+    "imageio-ffmpeg",
+    "gradio",
+]
+
+[project.scripts]
+quiz-generator-agent = "quiz_generator_agent.main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
